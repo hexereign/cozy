@@ -96,6 +96,7 @@ footer a:hover {color: sienna;}
 			padding-top: 1em; }
 		nav { text-align: left;
 		padding-left: 1em; }
+		nav ul li { padding: 5px 0px; }
 		#wrapper { margin: auto;
 		width: 90%;
 		border: 1px solid #330000;
