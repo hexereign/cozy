@@ -24,8 +24,12 @@ main a { font-weight; bold;
 main a:link { color: blue; }
 main a:visited { color: blue; }
 main a:hover { color: red; }
-footer {	font-size: 75%;
-			font-style: italic;
-			text-align: center;
-			font-family: Georgia, "Times New Roman", serif;
-            padding: 2em;}	
+footer { font-size: 75%;
+	 font-style: italic;
+	 text-align: center;
+	 font-family: Georgia, "Times New Roman", serif;
+	 padding: 2em; }
+footer a { text-decoration: none; }
+footer a:link { color: blue; }
+footer a:visited { color: blue; }
+footer a:hover { color: red; }
