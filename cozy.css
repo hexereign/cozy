@@ -65,8 +65,7 @@ main a:hover { color: #ff3333; }
   margin-right: auto;
   width: 50%;
 }
-div {   padding: 2px;
-        border: 4px #ff8000; }
+div {   padding: 2px; }
 footer {	font-size: 75%;
 			font-style: italic;
 			text-align: center;
@@ -76,7 +75,6 @@ footer a {text-decoration: none; margin-right: 15px; }
 footer a:link {color: #ff8000; }
 footer a:visited{color: #ff8000; }
 footer a:hover {color: #ff3333;}
-#border { border: 4px #592720; } 
 @media (min-width: 600px) {
 	nav ul {display: flex;
 			flex-flow: row nowrap;
