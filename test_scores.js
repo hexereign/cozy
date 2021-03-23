@@ -18,12 +18,12 @@ let addScore = function(){
     if (name == ""){
          alert("You must enter a name and a valid score")
     }
-    else if (score < 0 || score > 100){
+    else if (score == "" || score < 0 || score > 100){
          alert('You must enter a name and a valid score')
     } 
     else {
-		 names.push($("name").value);
-         scores.push($("score").value);
+	 	names.push($("name").value);
+         	scores.push($("score").value);
     }
     $("name").value = "";
     $("score").value = "";
