@@ -18,7 +18,7 @@ let addScore = function(){
     if (name == ""){
          alert("You must enter a name and a valid score")
     }
-    else if (isNaN(score || score =="")){
+    else if (isNaN(score) || score ==""){
          alert('You must enter a name and a valid score')
     } 
     else if (score == "" || score < 0 || score > 100){
