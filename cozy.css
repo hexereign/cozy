@@ -6,6 +6,11 @@ body { background-color: #555555;
 			background-image: linear-gradient(to bottom, #FFFFFF, #d1bea8);
 			background-repeat: no-repeat;
 }
+.result {
+      	  font-size: 20px;
+          font-weight: bold;
+          color: blue; 
+}
 header { background-color: #1b1b1b;
 		 color:#FFFFFF;
          text-align: center;
