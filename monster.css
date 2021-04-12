@@ -68,15 +68,19 @@ p{
 }
 
 #top{
-    position:absolute;
-    left: 101px;
-    top: 15px;
+    position:relative;
     z-index: 4;
 }
 
-header{
-    background-image: url(images/Monster_Mashup.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    line-height: 100;
+header { background-color: #1b1b1b;
+	  color:#33ff66;
+	  text-align: right;
+	 background-image: url(images/Monster_Mashup.png);
+	  background-position: left;
+	  background-repeat: no-repeat;
+	  line-height: 400%;
 }
+header a {text-decoration: none; }
+header a:link { color: #FFF; }
+header a:visited { color: #FFF; }
+header a:hover {color: #33ff66; } 
