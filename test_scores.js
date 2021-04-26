@@ -35,7 +35,7 @@ let addScore = function(){
 
 // iterate through scores array to get highest score and also calculate average score
 let displayResults = function () {
-    $("results").empty();	
+    	
     let results = $("results"); // selecting parent 'results'
     
     const Heading2 = document.createElement("h2"); // creating child heading
@@ -62,7 +62,7 @@ let displayResults = function () {
 let displayScores = function () {
 
     let table = $("scores_table");
-	$("scores-table").empty();
+	
 	let headers = ['Name', 'Score'];
     const scoresTable = $("scores_table"); // selecting parent "scores_table"
 
