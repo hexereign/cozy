@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mihalos :: Alien Sighting Form</title>
+		<link rel="stylesheet" type="text/css" href="sightings_form.css" />
+		<link type="text/css" href="jquery-ui-1.8.16.custom/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+	</head>
+
+	<body>
+	<div class="ui-widget-header ui-corner-top form_pad">
+		<h4><a href="https://hexereign.github.io/cozy/" >Portfolio HomePage</a></h4>
+      	<h1>ALIEN SIGHTING INFORMATION</h1>
+	</div>
+
+	<form id="frmAlienSighting" name="form" method="post">
+		<div class="ui-widget-content form_pad">
+			<h2>Fill out the form then click 'Send Report' to submit your entries.</h2>
+		</div>
+		<div class="ui-widget-content form_pad">
+			<h2>Date of Alien Sighting:</h2>
+				<p><input  type="text" name="sighting_date" id="datepicker" /></p>
+		</div>
+
+		<div class="ui-widget-content form_pad">
+			<h2>Alien Type:</h2>
+				<div id="type_select">
+					<input type="radio" id="radio1" name="alien_type" value="Human-like"/>
+						<label for="radio1">Human-like</label>
+					<input type="radio" id="radio2" name="alien_type" value="Worm-like"/>
+						<label for="radio2">Worm-like</label>
+					<input type="radio" id="radio3" name="alien_type" value="Insect-like"/>
+						<label for="radio3">Insect-like</label>
+					<input type="radio" id="radio4" name="alien_type" value="Fish-like"/>
+						<label for="radio4">Fish-like</label>
+					<input type="radio" id="radio5" name="alien_type" value="Bird-like"/>
+						<label for="radio5">Bird-like</label>
+					<input type="radio" id="radio6" name="alien_type" value="Other"/>
+						<label for="radio6">Other</label>
+				</div><br>
+			</div>
+
+			<div class="ui-widget-content form_pad">
+			<h2>Weight (pounds):</h2>
+				<input id="weight" class="just_display" name="alien_weight"   readonly="readonly"/>
+				<div id="slide_weight"></div>
+
+			<h2>Height (feet):</h2>
+				<input id="height" class="just_display" name="alien_height" readonly="readonly"/>
+				<div id="slide_height"></div><br>				
+			</div>
+
+			<div class="ui-widget-content form_pad">
+				</div>	
+
+			<div class="ui-widget-content form_pad">
+			<h2>Main Color of Alien (use the color sliders to customize your color):</h2>
+
+				Red:<input  type="text" class="just_display" name="alien_color" id="red_val" readonly="readonly"/>
+				<div id="red"></div>
+				Green:<input  type="text" class="just_display" name="alien_color" id="green_val" readonly="readonly"/>
+				<div id="green"></div>
+				Blue:<input  type="text" class="just_display" name="alien_color" id="blue_val" readonly="readonly"/>
+				<div id="blue"></div><br>
+
+				<div id="swatch" class="ui-widget-content ui-corner-all"></div><br>
+			</div>
+
+		<div class="ui-widget-header ui-corner-bottom form_pad"><br>
+			<a id="sendReport"><img src="kazoo_report.png" alt="Send Report"/></a>
+			<div id="dialog" title="Thank you!" style="display:none;">
+			<img src="sent_space.jpg">
+			</div>
+
+			<h4><a href="https://hexereign.github.io/cozy/" >Portfolio HomePage</a></h4>
+		</div>
+	</form>
+	
+		<script src="jquery-1.6.2.min.js"></script>
+		<script src="sightings_scripts.js"></script>
+		<script src="jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
+
+	</body>
+</html>
