@@ -3,7 +3,9 @@
 	<head>
 		<title>Mihalos :: Alien Sighting Form</title>
 		<link rel="stylesheet" type="text/css" href="sightings_form.css" />
-		<link type="text/css" href="css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="jquery.nice-number.css" />
+		<link type="text/css" href="jquery-ui-1.8.16.custom/css/sunny/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
+
 	</head>
 
 	<body>
@@ -14,7 +16,7 @@
 
 	<form id="frmAlienSighting" name="form" method="post">
 		<div class="ui-widget-content form_pad">
-			<h2>Fill out the form then click 'Send Report' to submit your entries.</h2>
+			<h2>Fill out form and click 'Send Report'</h2>
 		</div>
 		<div class="ui-widget-content form_pad">
 			<h2>Date of Alien Sighting:</h2>
@@ -50,23 +52,36 @@
 			</div>
 
 			<div class="ui-widget-content form_pad">
-				</div>	
+				<h2>Click to set # of alien's eyes, arms, and legs:</h2><br>
+				<div class="box">
+					<label for="eyes"># of eyes</label>
+					<input type="number" id="eyes" value="0">
+				</div><br>
+				<div class="box">
+					<label for="arms"># of arms</label>
+					<input type="number" id="arms" value="0">
+				</div><br>
+				<div class="box">
+					<label for="legs"># of legs</label>
+					<input type="number" id="legs" value="0">
+				</div><br>
+			</div>	
 
 			<div class="ui-widget-content form_pad">
-			<h2>Main Color of Alien (use the color sliders to customize your color):</h2>
-				<br><div id="swatch" class="ui-widget-content ui-corner-all"></div><br>
+			<h2>Use Sliders to customize alien's main color:</h2><br>
+			<div id="swatch" class="ui-widget-content ui-corner-all"></div><br>
 				Red:<input  type="text" class="just_display" name="alien_color" id="red_val" readonly="readonly"/>
 				<div id="red"></div>
 				Green:<input  type="text" class="just_display" name="alien_color" id="green_val" readonly="readonly"/>
 				<div id="green"></div>
 				Blue:<input  type="text" class="just_display" name="alien_color" id="blue_val" readonly="readonly"/>
-				<div id="blue"></div><br>				
+				<div id="blue"></div><br>
 			</div>
 
 		<div class="ui-widget-header ui-corner-bottom form_pad"><br>
 			<a id="sendReport"><img src="kazoo_report.png" alt="Send Report"/></a>
 			<div id="dialog" title="Thank you!" style="display:none;">
-			<img src="sent_space.jpg">
+				<img src="sent_space.jpg">
 			</div>
 
 			<h4><a href="https://hexereign.github.io/cozy/" >Portfolio HomePage</a></h4>
@@ -75,7 +90,8 @@
 	
 		<script src="jquery-1.6.2.min.js"></script>
 		<script src="sightings_scripts.js"></script>
-		<script src="js/jquery-ui-1.8.16.custom.min.js"></script>
+		<script src="jquery.nice-number.js"></script>
+		<script src="jquery-ui-1.8.16.custom/js/jquery-ui-1.8.16.custom.min.js"></script>
 
 	</body>
 </html>
